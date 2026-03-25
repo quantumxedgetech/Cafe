@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Premium café serving artisan coffee and delicious food. Brewed with passion since 2015.">
+    <meta name="keywords" content="café, coffee, breakfast, desserts, artisan coffee, café menu">
+    <title>Café Aroma - Brewed with Passion Since 2015</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Contact Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/1234567890" class="float-btn whatsapp" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+1234567890" class="float-btn call" aria-label="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-coffee"></i>
+                <span>Café Aroma</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Café Aroma</h1>
+            <p class="hero-tagline">Brewed with passion since 2015</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">
+                    <i class="fas fa-book-open"></i> View Menu
+                </a>
+                <a href="#order" class="btn btn-secondary">
+                    <i class="fas fa-shopping-bag"></i> Order Online
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Story</h2>
+                <p class="section-subtitle">A journey of passion, quality, and community</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to Café Aroma</h3>
+                    <p>Since 2015, we've been serving the finest artisan coffee and delicious food to our beloved
+                        community. What started as a small dream has grown into a warm gathering place where friends
+                        meet, ideas flow, and memories are made.</p>
+                    <p>Our mission is simple: to provide exceptional coffee, delightful food, and a welcoming atmosphere
+                        where everyone feels at home. Every cup is crafted with care, every dish prepared with love.</p>
+
+                    <div class="mission-values">
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Passion</h4>
+                            <p>We love what we do, and it shows in every cup</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Quality</h4>
+                            <p>Only the finest beans and freshest ingredients</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <h4>Community</h4>
+                            <p>Building connections, one coffee at a time</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80"
+                        alt="Café Interior">
+                </div>
+            </div>
+
+            <!-- Stats Counter -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <i class="fas fa-coffee"></i>
+                    <div class="stat-number" data-target="50000">0</div>
+                    <p>Cups Served</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-smile"></i>
+                    <div class="stat-number" data-target="10000">0</div>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-number" data-target="9">0</div>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award"></i>
+                    <div class="stat-number" data-target="15">0</div>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2015 - The Beginning</h4>
+                        <p>Opened our doors with a dream and a passion for great coffee</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2017 - Expansion</h4>
+                        <p>Introduced our full breakfast and lunch menu</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2020 - Going Digital</h4>
+                        <p>Launched online ordering and delivery services</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2024 - Today</h4>
+                        <p>Serving our community with pride and excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Discover our delicious offerings</p>
+            </div>
+
+            <!-- Menu Controls -->
+            <div class="menu-controls">
+                <div class="menu-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="menuSearch" placeholder="Search menu items...">
+                </div>
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="coffee">
+                        <i class="fas fa-coffee"></i> Coffee
+                    </button>
+                    <button class="filter-btn" data-category="breakfast">
+                        <i class="fas fa-bread-slice"></i> Breakfast
+                    </button>
+                    <button class="filter-btn" data-category="desserts">
+                        <i class="fas fa-cake-candles"></i> Desserts
+                    </button>
+                    <button class="filter-btn" data-category="healthy">
+                        <i class="fas fa-leaf"></i> Healthy
+                    </button>
+                    <button class="filter-btn" data-category="drinks">
+                        <i class="fas fa-glass-water"></i> Drinks
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Online Section -->
+    <section class="order" id="order">
+        <div class="container">
+            <!-- Order section content -->
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Your Order</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount" id="totalAmount">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">
+                <i class="fas fa-credit-card"></i> Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Reserve a Table</h2>
+                <p class="section-subtitle">Book your perfect spot</p>
+            </div>
+
+            <div class="reservation-content">
+                <div class="reservation-info">
+                    <h3>Why Reserve?</h3>
+                    <ul class="reservation-benefits">
+                        <li><i class="fas fa-check"></i> Guaranteed seating</li>
+                        <li><i class="fas fa-check"></i> Skip the wait</li>
+                        <li><i class="fas fa-check"></i> Special occasion arrangements</li>
+                        <li><i class="fas fa-check"></i> Priority service</li>
+                    </ul>
+                    <div class="reservation-image">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80"
+                            alt="Café Seating">
+                    </div>
+                </div>
+
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user"></i> Full Name *
+                        </label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            <i class="fas fa-phone"></i> Phone Number *
+                        </label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">
+                                <i class="fas fa-calendar"></i> Date *
+                            </label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">
+                                <i class="fas fa-clock"></i> Time *
+                            </label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">
+                            <i class="fas fa-users"></i> Number of Guests *
+                        </label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select...</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7+">7+ Guests</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special">
+                            <i class="fas fa-comment"></i> Special Requests
+                        </label>
+                        <textarea id="special" name="special" rows="4"
+                            placeholder="Any special requirements or occasions?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-check"></i> Confirm Reservation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Moments captured at Café Aroma</p>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery images will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" id="lightboxPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" id="lightboxNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <img src="" alt="" id="lightboxImage">
+    </div>
+
+    <!-- Facilities Section -->
+    <section class="facilities" id="facilities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Facilities</h2>
+                <p class="section-subtitle">Everything you need for a perfect visit</p>
+            </div>
+
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Free Wi-Fi</h3>
+                    <p>High-speed internet for work or leisure</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Air Conditioned</h3>
+                    <p>Comfortable climate-controlled environment</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Outdoor Seating</h3>
+                    <p>Enjoy your coffee in the fresh air</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Parking Available</h3>
+                    <p>Convenient parking for all guests</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-plug"></i>
+                    <h3>Power Sockets</h3>
+                    <p>Charge your devices while you relax</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-paw"></i>
+                    <h3>Pet Friendly</h3>
+                    <p>Your furry friends are welcome</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Live Music</h3>
+                    <p>Enjoy live performances on weekends</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-bag-shopping"></i>
+                    <h3>Takeaway</h3>
+                    <p>Grab and go service available</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Home Delivery</h3>
+                    <p>We deliver to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real reviews from real people</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <button class="slider-btn prev" id="testimonialPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="testimonials-container" id="testimonialsContainer">
+                    <!-- Testimonials will be dynamically loaded -->
+                </div>
+
+                <button class="slider-btn next" id="testimonialNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="slider-dots" id="testimonialDots"></div>
+        </div>
+    </section>
+
+    <!-- Events & Offers Section -->
+    <section class="events" id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Events & Offers</h2>
+                <p class="section-subtitle">Don't miss out on our special events</p>
+            </div>
+
+            <div class="events-grid">
+                <div class="event-card featured">
+                    <div class="event-badge">Limited Time</div>
+                    <i class="fas fa-percent"></i>
+                    <h3>Weekend Special</h3>
+                    <p>Get 20% off on all breakfast items every Saturday & Sunday</p>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="days">00</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="hours">00</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="minutes">00</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="seconds">00</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Happy Hours</h3>
+                    <p>Enjoy special prices on selected beverages</p>
+                    <div class="event-time">3 PM - 6 PM Daily</div>
+                </div>
+
+                <div class="event-card">
+                    <i class="fas fa-guitar"></i>
+                    <h3>Live Music Nights</h3>
+                    <p>Acoustic performances every Friday evening</p>
+                    <div class="event-time">7 PM - 10 PM</div>
+                </div>
+
+                <div class="event-card">
+                    <i class="fas fa-mug-hot"></i>
+                    <h3>Coffee Tasting</h3>
+                    <p>Explore different coffee origins and brewing methods</p>
+                    <div class="event-time">First Sunday of Month</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Coffee Street, Downtown<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@cafearoma.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Friday: 7:00 AM - 10:00 PM<br>
+                                Saturday - Sunday: 8:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6174339853683!2d-73.98823492346652!3d40.74844097138558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1704891234567!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-coffee"></i>
+                        <span>Café Aroma</span>
+                    </div>
+                    <p>Brewing excellence since 2015. Your neighborhood café for exceptional coffee and warm
+                        hospitality.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul class="opening-hours">
+                        <li>
+                            <span>Monday - Friday</span>
+                            <span>7:00 AM - 10:00 PM</span>
+                        </li>
+                        <li>
+                            <span>Saturday - Sunday</span>
+                            <span>8:00 AM - 11:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and updates</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Café Aroma. All rights reserved.</p>
+                <p>Designed by <strong>Zohaib Ali</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Checkout</h3>
+                <button class="modal-close" id="closeCheckout">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Delivery Address</label>
+                        <textarea rows="3" required></textarea>
+                    </div>
+                    <div class="checkout-total">
+                        <span>Total Amount:</span>
+                        <span class="checkout-amount" id="checkoutAmount">$0.00</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-check"></i> Place Order
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-content">
+            <div class="success-animation">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Success!</h3>
+            <p id="successMessage">Your request has been processed successfully.</p>
+            <button class="btn btn-primary" id="closeSuccess">OK</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
